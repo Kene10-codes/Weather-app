@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useDebugValue } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { getForecast, getWeather } from "../services/weatherService";
 
 import type { CurrentWeather, ForecastResponse } from "../types/weather";
