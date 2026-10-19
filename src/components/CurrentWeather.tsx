@@ -22,7 +22,7 @@ const CurrentWeather = ({ weather }: CurrentWeatherTypeProps) => {
         </div>
 
         <img
-          src={`https://openweathermap.org/img/wn/${weatherCondition.icon}`}
+          src={`https://openweathermap.org/img/wn/${weatherCondition.icon}@2x.png`}
           alt={weatherCondition.description}
         />
       </div>
