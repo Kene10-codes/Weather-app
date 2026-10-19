@@ -18,8 +18,8 @@ const getWeather = async (city: string): Promise<CurrentWeather | null> => {
   return requestApi<CurrentWeather | null>(url);
 };
 
-const getForecast = async (city: string): Promise<ForecastResponse> => {
+const getForecast = async (city: string): Promise<ForecastResponse | null> => {
   const url = `${API_URL}forecast?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`;
-  return requestApi<ForecastResponse>(url);
+  return requestApi<ForecastResponse | null>(url);
 };
 export { getWeather, getForecast };

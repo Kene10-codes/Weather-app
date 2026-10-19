@@ -1,9 +1,10 @@
+
 const LoadingSpinner = () => {
   return (
     <div>
-      <p>Loading...</p>
+       <p>Loading...</p>
     </div>
-  );
-};
+  )
+}
 
-export default LoadingSpinner;
+export default LoadingSpinner

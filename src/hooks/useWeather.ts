@@ -19,7 +19,7 @@ function useWeather(initialCity = "Abuja"): useWeatherReturn {
   const [error, setError] = useState<string | null>(null);
 
   const searchWeather = useCallback(async (city: string) => {
-    const trimmedCity = city.trim();
+    const trimmedCity = city.trim().toLowerCase();
 
     // Check if city exists or null
     if (!trimmedCity) {
