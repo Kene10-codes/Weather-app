@@ -11,15 +11,15 @@ const SearchBar = ({ loading, searchWeather }: { loading: boolean; searchWeather
 
   return (
     <div className="flex justify-center items-center my-4">
-      <form onSubmit={handleSearch}>
+      <form onSubmit={handleSearch} className="flex flex-col sm:flex-row items-center gap-2">
         <input
-          className="border w-full max-w-sm block my-4 sm:my-0 sm:inline-block sm:w-48 rounded-xm border-gray-300 p-2 mr-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="border w-full block my-2 sm:rounded-xl border-gray-300 p-2 mr-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           type="text"
           placeholder="Enter city name"
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
-        <button type="submit" className="bg-blue-500 text-md font-bold w-xl max-w-sm text-white p-2 rounded-md hover:bg-blue-600">
+        <button type="submit" className="bg-blue-500 text-md font-bold w-full md:w-xl md:max-w-xl text-white p-2 rounded-md hover:bg-blue-600">
           {loading ? "Searching...": "Search"}
         </button>
       </form>

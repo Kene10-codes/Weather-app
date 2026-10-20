@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <main className="mx-auto p-4">
-        <h1 className="text-4xl text-center font-bold text-blue-500">
+        <h1 className="text-xl md:text-3xl lg:text-4xl text-center font-bold md:font-semibold text-blue-500">
           Weather Application
         </h1>
         <SearchBar searchWeather={searchWeather} loading={loading} />

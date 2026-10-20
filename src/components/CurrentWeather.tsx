@@ -34,13 +34,13 @@ const CurrentWeather = ({ weather }: CurrentWeatherTypeProps) => {
 
       <p className="my-4 mx-0 font-semibold text-md">Feels like {Math.round(weather.main.feels_like)} °C</p>
 
-      <div className="flex justify-between gap-4 font-semibold text-lg mt-4">
+      <div className="flex flex-col md:flex-row justify-between gap-4 font-semibold text-lg mt-4">
         <span>High: {Math.round(weather.main.temp_max)}°C</span>
 
         <span>Low: {Math.round(weather.main.temp_min)}°C</span>
       </div>
 
-      <div className="mt-4 grid grid-cols-3 gap-4 text-lg font-semibold">
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg font-semibold">
         <div className="flex flex-col gap-2 py-4 rounded-2xl bg-white">
           <span>Humidity</span>
           <strong>{weather.main.humidity}%</strong>
